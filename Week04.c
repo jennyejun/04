@@ -1,16 +1,22 @@
 #include <stdio.h>
 
 int main(int argc, char* argv[]) {
-	int x, y, z, m;
-	int a, b, c;
-	x = 2;
-	z = 1;
-	a = 3;
-	b = 4;
-	c = 5;
+	int a, b;
+	int c1, c2, c3;
+	float c4, c5;
 
-	y = a * x * x + b * x + c;
-	m = (x + y + z) / 3;
+	printf("input two integers :");
+	scanf_s("%i %i", &a, &b);
 
-	printf("y=%d, m=%d", y, m);
+	c1 = a + b;
+	c2 = a - b;
+	c3 = a * b;
+	c4 = a / b;
+	c5 = a % b;
+
+	printf("+ result is %d\n", c1);
+	printf("- result is %d\n", c2);
+	printf("* result is %d\n", c3);
+	printf("/ result is %.f\n", c4);
+	printf("%% result is %.f", c5);
 }
